@@ -1,0 +1,47 @@
+<title>HDFC Moneyback+ Reward Points to Cash Calculator</title>
+
+
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="2 days">
+<meta name="author" content="Uttkarsh Sharma">
+<link rel="shortcut icon" href="https://uttkarsh.net/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+<meta name="description" content="HDFC MoneyBack+ Credit Card Reward Points to Cash Calculator, enter your reward points and get your cash value.">
+<meta name="keywords" content="HDFC Moneyback+, Credit Card Reward Points to Cash Calculator, moneyback+ reward points to cash calculator">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<body style="margin: 30px">
+	<center><h1 style="color:green">HDFC Rewards to Cash Calculator</h1>
+	<h3>Moneyback+ Reward Points to Cash Calculator</h3>
+	<form>
+		Reward Points : <input type="text" id="rewardpoints" /><br>
+		
+		</br><input type="button" onClick="divideBy()" Value="Submit" />
+	</form>
+
+	<p>Cash Value (₹):
+		<span id="result"></span>
+	</p>
+
+
+	<script>
+		function divideBy()
+		{
+		num1 = document.getElementById(
+			"rewardpoints").value;
+		num2 = 4;
+		document.getElementById(
+			"result").innerHTML = num1 / num2;
+		}
+	</script>
+</body>
